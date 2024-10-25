@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apalizExamen.Views.Login"
+             Title="Login">
+    <VerticalStackLayout
+    Padding="25"
+    Spacing="20">
+        <Image Source=": https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGOUISRAEL-768x209.png"
+           HeightRequest="100"/>
+        <Label Text="Sistema Estudiantes"
+           TextColor="Red"
+           FontSize="20"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text=""
+               FontSize="Title"
+               Grid.Row="0"/>
+
+            <Label Text="USUARIO"
+               FontSize="Subtitle"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Grid.Row="1"
+               Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+               Placeholder="Ingrese su usuario"
+               Grid.Row="1"
+               Grid.Column="1"/>
+            <Label Text=""
+               Grid.Column="1"/>
+            <Label Text=""
+               Grid.Column="2"/>
+
+            <Label Text="CONTRASEÑA"
+               FontSize="Subtitle"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="3"
+               Grid.Column="0"/>
+            <Entry x:Name="txtContrasena"
+               Placeholder="Ingrese su contraseña"
+               IsPassword="True"
+               Grid.Row="3"
+               Grid.Column="1"/>
+        </Grid>
+        <StackLayout>
+            <Button x:Name="btnInicio"
+                Text="INICIAR SESION"
+                Clicked="btnInicio_Clicked"
+                Grid.Row="4"
+                Grid.Column="1"/>
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+
+</ContentPage>
