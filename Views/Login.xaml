@@ -41,7 +41,7 @@
           Grid.Column="0"/>
 
             <Entry x:Name="txtUsario"
-          Placeholder="Ingrese aqui la contraseña"
+          Placeholder="Ingrese el usuario"
           Grid.Row="1"
           Grid.Column="1"                
           />
