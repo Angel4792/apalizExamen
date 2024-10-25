@@ -1,4 +1,4 @@
-﻿using Android.Content.Res;
+﻿
 
 namespace apalizExamen
 {
@@ -8,7 +8,7 @@ namespace apalizExamen
         {
             InitializeComponent();
 
-            MainPage = (new Views.Login();
+            MainPage = new NavigationPage(new Views.Login());
         }
     }
 }
